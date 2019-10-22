@@ -1,0 +1,10 @@
+### ignore openwrt directory
+openwrt/*
+openwrt
+
+### ignore .idea .DS_store
+.idea
+.idea/*
+.idea
+.DS_store/*
+.DS_store

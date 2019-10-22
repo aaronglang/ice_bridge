@@ -1,0 +1,11 @@
+config redirect
+        option name 'Allow-transparent-Squid'
+        option proto 'tcp'
+        option target 'DNAT'
+        option src 'lan'
+        option src_ip '!192.168.8.1'
+        option src_dip '!192.168.8.1'
+        option src_dport '80'
+        option dest 'lan'
+        option dest_ip '192.168.8.1'
+        option dest_port '3128'

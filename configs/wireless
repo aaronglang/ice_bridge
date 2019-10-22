@@ -1,0 +1,32 @@
+config wifi-device 'radio0'
+        option type 'mac80211'
+        option hwmode '11g'
+        option path '10180000.wmac'
+        option htmode 'HT20'
+        option channel '6'
+
+config wifi-iface
+        option network 'wwan'
+        option ssid 'D031DA'
+        option encryption 'psk2'
+        option device 'radio0'
+        option mode 'sta'
+        option bssid '58:19:F8:D0:31:DA'
+        option key '82C26C2C47674'
+        option disabled '1'
+
+config wifi-iface 'wlan'
+        option device 'radio0'
+        option mode 'ap'
+        option ssid 'Maestro'
+        option encryption 'none'
+
+#### When AP is running
+config wifi-device 'radio0'
+        option type 'mac80211'
+        option hwmode '11g'
+        option path '10180000.wmac'
+        option htmode 'HT20'
+        option channel '6'
+        option txpower '20'
+        option country '00'
